@@ -30,6 +30,7 @@ cinst -y ruby
 cinst -y ruby.devkit
 cinst -y python3
 cinst -y mysql
+cinst -y xampp-80
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
