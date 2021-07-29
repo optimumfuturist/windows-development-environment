@@ -23,26 +23,28 @@ cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 
 ## Editors
-cinst -y visualstudiocode
-
-## Visual Studio 2017
-cinst -y visualstudio2017community
-if (Test-PendingReboot) { Invoke-Reboot }
+cinst -y vscode
 
 ## Ruby, Go, Python
 cinst -y ruby
 cinst -y ruby.devkit
-
-cinst -y python2
+cinst -y python3
+cinst -y mysql
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
 cinst -y vlc
 cinst -y GoogleChrome
+cinst -y Firefox
 cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet3.5
+
+## Extras
+cinst -y zoom
+cinst -y protonvpn
+
 
 # cinst -y DotNet4.0 -- not needed on windows 8
 # cinst -y DotNet4.5 -- not needed on windows 10
